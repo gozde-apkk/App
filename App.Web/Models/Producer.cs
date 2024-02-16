@@ -1,8 +1,9 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using App.Web.Data.Base;
+using System.ComponentModel.DataAnnotations;
 
 namespace App.Web.Models
 {
-    public class Producer
+    public class Producer :IEntityBase
     {
         [Key]
         public int Id { get; set; }
